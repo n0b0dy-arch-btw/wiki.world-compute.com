@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Arch Linux Automated Installer Script I Made - wiki.world-compute.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1>Arch Linux Automated Installer Script I Made</h1>
+        <p>Category: Linux</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="copyright.html">Copyright</a></li>
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="linux.html" class="active">Linux</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="misc.html">Miscellaneous</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Introduction</h2>
+        <p>This guide walks you through installing Arch Linux With a script that i made...</p>
+        <br>
+        <p>the youtube tutorial is below</p>
+        <a href="https://youtu.be/uwNUb4c5P-k?si=VzJf4f7fpPC1JXuq">https://youtu.be/uwNUb4c5P-k?si=VzJf4f7fpPC1JXuq</a>
+
+        <h2>Steps</h2>
+        <ol>
+            <li>Boot from the Arch ISO.</li>
+            <li>Partition the disk with <code>fdisk</code> you can check your drive name with <code>lsblk</code></li>
+            <li>Then install git with <code>pacman -Sy git</code></li>
+            <li>Clone the shelly installer script with <code>git clone https://github.com/n0b0dy-arch-btw/ArchLinux-Installer.git</code></li>
+            <li><code>cd</code> into the downloaded file type ls to list then <code>cd</code> into the file</li>
+            <li>Configure the <code>install.conf</code> to your needs</li>
+            <li>then run <code>chmod +x arch_install.sh</code> to make the file executable</li>
+            <li>now you can run the installer with <code>./arch_install.sh</code></li>
+            <li>now you have arch installed and you can reboot</li>
+            <li>once you have loged into your system you will need to install git with <code>pacman -Sy git</code></li>
+            <li>then <code>cd</code> into the installed file with <code>cd</code></li>
+            <li>now you need to configure the <code>postinstall.conf</code> to your systems needs</li>
+            <li>make the <code>post_install.sh</code> executable with <code>chmod +x post_install.sh</code></li>
+            <li>now you can run the install with <code>post_install.sh</code></li>
+            <li>now your arch system is all done and should be running perfect</li>
+            <li>if you have a issue then comment on the youtube video the link is under the introduction</li>
+        </ol>
+    </main>
+
+    <footer>
+        <p>© 2025 My Retro Wiki | <a href="copyright.html">Copyright & Licensing</a></p>
+    </footer>
+</div>
+</body>
+</html>
